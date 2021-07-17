@@ -5,7 +5,7 @@ class Solution {
         int ones = 0;
         for (int n : arr) {
             if (n == 1){
-                ones++;//count the total number of ones
+                ones++;
             }
         }
         if (ones % 3 != 0) {//total number of one's are divisible by three ?
