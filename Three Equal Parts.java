@@ -12,7 +12,7 @@ class Solution {
             return failed;
         }
         
-        if (ones == 0) {//no one in the input// literally any two pair of valid indices would work
+        if (ones == 0) {
             return new int[]{0,2};
         }
         
