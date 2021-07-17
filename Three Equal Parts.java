@@ -55,8 +55,6 @@ class Solution {
         return new int[]{firstPartEnd, secondPartEnd+1};
     }
     
-    // returns the index that contains n number of ones from start index
-    // if less than n number of ones present, returns the length of the input array
     private int indexOfNthOne(int[] arr, int start, int n) {
         int counts = 0;
         while (start < arr.length){
