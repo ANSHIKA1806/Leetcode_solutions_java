@@ -37,4 +37,14 @@ class Solution {
 
         return tail;
     }
+	    public int countNodes(ListNode node) {
+        int count = 0;
+        while (node != null) {
+            count++;
+            node = node.next;
+        }
+
+        return count;
+    }
+}
 
