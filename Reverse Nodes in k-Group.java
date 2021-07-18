@@ -16,3 +16,25 @@ class Solution {
 
         return root.next;
     }
+
+    public ListNode reverse(ListNode node, int k) {
+        ListNode curr = node.next;
+        ListNode tail = null;
+        ListNode reversed = null;
+
+        while (k > 0 && curr != null) {
+            ListNode newNode = curr.next;
+            curr.next = reversed;
+            reversed = curr;
+            curr = newNode;
+            if (reversed.next == null) tail = reversed;
+
+            k--;
+        }
+
+        tail.next = curr;
+        node.next = reversed;
+
+        return tail;
+    }
+
