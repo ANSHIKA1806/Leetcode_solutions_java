@@ -13,4 +13,5 @@ public class Solution {
         return root ==p?p:root==q?q:root;
         
     }
+}
 
