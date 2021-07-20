@@ -6,6 +6,7 @@ class Solution {
         this.duplicate=nums.clone();
     }
     
+    /** Resets the array to its original configuration and return it. */
     public int[] reset() {
         for(int i=0;i<nums.length;i++)
             nums[i]=duplicate[i];
