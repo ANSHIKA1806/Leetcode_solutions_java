@@ -6,5 +6,5 @@ class Solution {
         if(root.left!=null || root.right!=null || root.val==1)
             return root;
         return null;
+    }
 }
-
